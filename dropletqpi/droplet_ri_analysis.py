@@ -359,8 +359,7 @@ def run_analysis(file_list, bg_path, save_path, meta_data=meta_data ,**kwargs):
                     results.attrs[attr] = meta_data[attr]
 
         with h5py.File(str(save_path) + "\\"
-                          + file.name.strip(".h5") + "_fov.h5", "w") as fov:
-            # TODO there is probably a smarter way of exporting the whole qpi-object
+                          + file.name.removesuffix(".h5") + "_fov.h5", "w") as fov:
             data = fov.create_group("Full field of view image data")
             data.create_dataset("hologram",
                                 data=sample_holo.T)
