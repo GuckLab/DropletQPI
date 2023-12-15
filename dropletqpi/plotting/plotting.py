@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def plot_scatter(x, y, title='', return_fig = True):
 
-    with plt.style.context('seaborn-whitegrid'):
+    with plt.style.context('seaborn-v0_8-whitegrid'):
         fig, ax = plt.subplots(figsize=(4.5, 4.5))
         plt.xlabel('droplet radius [m]')
         plt.ylabel('refractive index')
