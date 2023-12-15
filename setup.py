@@ -25,6 +25,7 @@ setup(
                       "scikit-image>=0.17.2",
                       "scipy>=0.12.0",
                       "pandas",
+                      "openpyxl"
                       ],
     python_requires=">=3.6",
     keywords=["image analysis", "biology", "microscopy"],
