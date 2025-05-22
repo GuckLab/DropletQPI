@@ -12,9 +12,7 @@ from scipy.ndimage.filters import uniform_filter1d
 plt.close()
 PIXEL_AREA = 0.253 * 0.253  # lateral pixel area in µm^2
 VOXEL_VOLUME = 0.253 * 0.253 * (2 * 0.253)  # µm^3
-# data_path = Path(r'\\biotec-files\alberti_optics\MeasurementData\Timon\ODT\2021-11-19-FUS_ODT_1M_KCl\EvalData')
-# data_path = Path(r'E:\Data\ODT\2021-09-29_FUS_ODT_temp_ramp\EvalData')
-data_path = Path(r'E:\Data\ODT\2021-11-26_FUS_ODT_temp_ramp\EvalData\25C')
+data_path = Path(r'*')
 file_list = list(data_path.glob('Tomogram*rep0.mat'))
 
 # odt_data = sio.loadmat(path)
